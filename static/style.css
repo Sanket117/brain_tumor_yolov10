@@ -208,7 +208,7 @@ button:hover {
 }
 
 .chat-output p.user-message::before {
-    content: url('user-icon.png'); /* Replace with the path to your user icon */
+    content: url('static\chatbot.png'); 
     position: absolute;
     left: -40px;
     top: 50%;
@@ -219,7 +219,7 @@ button:hover {
 }
 
 chat-output p.bot-message::before {
-    content: url('static\chatbot.png'); /* Replace with the path to your bot icon */
+    content: url('static\chatbot.png'); 
     position: absolute;
     right: -40px;
     top: 50%;
