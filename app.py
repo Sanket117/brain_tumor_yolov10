@@ -8,6 +8,9 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain.llms import CTransformers
+from langchain_community.llms import CTransformers
+
+
 from pinecone import Pinecone
 
 from flask_cors import CORS
