@@ -1,0 +1,13 @@
+flask
+flask_cors
+langchain-pinecone
+langchain-huggingface
+langchain-core
+langchain.chains
+langchain.llms
+langchain_community.llms
+pinecone
+ultralytics
+matplotlib
+torch
+transformers
