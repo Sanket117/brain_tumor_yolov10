@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Patient Information</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/add_patient.css"> <!-- Link to the external CSS file -->
+    <style>
+        .navbar-custom {
+            background-color: #004080; /* Custom navbar color */
+        }
+        .submit-button {
+            display: flex;
+            justify-content: center; /* Center the submit button */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar with Home and Logout -->
+    <nav class="navbar navbar-expand-lg navbar-custom"> <!-- Applied custom class -->
+        <a class="navbar-brand text-white" href="#">Brain Tumor Detection and Classification and AI Chatbot</a> <!-- Changed text color to white -->
+        <div class="ml-auto">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/">Home</a> <!-- Changed link text color to white -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-danger" href="/login">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center mt-4">Add Patient Information</h1>
+        <form action="/add_patient" method="POST" class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="date_of_birth" class="form-control" required>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" class="form-control" required>
+                        <option value="" disabled selected>Select gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="medical_history">Medical History:</label>
+                    <textarea id="medical_history" name="medical_history" rows="4" class="form-control" required></textarea>
+
+                    <label for="tumor_type">Tumor Type:</label>
+                    <input type="text" id="tumor_type" name="tumor_type" class="form-control" required>
+
+                    <label for="tumor_location">Tumor Location:</label>
+                    <input type="text" id="tumor_location" name="tumor_location" class="form-control" required>
+
+                    <label for="notes">Additional Notes:</label> <!-- Moved Additional Notes to left column -->
+                    <textarea id="notes" name="notes" rows="4" class="form-control"></textarea>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="tumor_size">Tumor Size (in cm):</label>
+                    <input type="text" id="tumor_size" name="tumor_size" class="form-control" required>
+
+                    <label for="diagnosis_date">Diagnosis Date:</label>
+                    <input type="date" id="diagnosis_date" name="diagnosis_date" class="form-control" required>
+
+                    <label for="treatment_plan">Treatment Plan:</label>
+                    <textarea id="treatment_plan" name="treatment_plan" rows="4" class="form-control" required></textarea>
+
+                    <label for="follow_up_reports">Follow-Up Reports:</label>
+                    <textarea id="follow_up_reports" name="follow_up_reports" rows="4" class="form-control" required></textarea>
+
+                    <label for="treating_physician">Treating Physician:</label>
+                    <input type="text" id="treating_physician" name="treating_physician" class="form-control" required>
+
+                    <label for="next_appointment">Next Appointment:</label>
+                    <input type="date" id="next_appointment" name="next_appointment" class="form-control" required>
+
+                    <label for="contact_info">Contact Info:</label>
+                    <input type="text" id="contact_info" name="contact_info" class="form-control" required>
+                </div>
+            </div>
+            <div class="submit-button mt-4"> <!-- Centered the submit button -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

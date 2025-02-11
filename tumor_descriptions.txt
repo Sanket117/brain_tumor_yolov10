@@ -1,0 +1,134 @@
+Image: /content/BrainTumor/g_1.jpg
+Tumor Type: Glioma
+Location: Limbic lobe, parietal lobe, occipital lobe,singulam
+Affected Parts: The tumor affects the Limbic lobe, parietal lobe, occipital lobe,singulam, which is responsible for Handles emotions, memory, and behavior; includes hippocampus and amygdala for memory and emotional regulation
+Additional Details: Gliomas are known for their aggressive nature and can cause symptoms like headaches, seizures, and cognitive impairments.
+
+Image: /content/BrainTumor/g_2.jpg
+Tumor Type: Glioma
+Location: Limbic lobe, parietal lobe, occipital lobe,singulam
+Affected Parts: The tumor affects the Limbic lobe, parietal lobe, occipital lobe,singulam, which is responsible for Handles emotions, memory, and behavior; includes hippocampus and amygdala for memory and emotional regulation
+Additional Details: Gliomas are often aggressive, leading to symptoms such as persistent headaches, seizures, and challenges with cognitive functions.
+
+Image: /content/BrainTumor/g_3.jpg
+Tumor Type: Glioma
+Location: Left frontal lobe
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such as reasoning, planning, parts of speech, and movement.
+Additional Details: Known for their aggressive progression, gliomas can cause chronic headaches, frequent seizures, and notable cognitive impairments.
+
+Image: /content/BrainTumor/g_4.jpg
+Tumor Type: Glioma
+Location: Left frontal lobe
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such as reasoning, planning, parts of speech, and movement.
+Additional Details: Gliomas often present with aggressive growth, leading to symptoms such as persistent headaches, seizures, and difficulties with cognitive functions.
+
+Image: /content/BrainTumor/g_5.jpg
+Tumor Type: Glioma
+Location: thalamus,lentiform nucleus
+Affected Parts: The tumor affects the thalamus,lentiform nucleus which is responsible for Acts as a relay station for sensory information; crucial for processing and transmitting sensory and motor signals.
+Additional Details: Known for their rapid progression, gliomas can cause severe headaches, frequent seizures, and significant cognitive decline.
+
+Image: /content/BrainTumor/g_5.jpg
+Tumor Type: Glioma
+Location: Left,right frontal lobe
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such as reasoning, planning, parts of speech, and movement.
+Additional Details: Gliomas are characterized by their aggressive behavior, frequently resulting in symptoms like chronic headaches, seizure activity, and cognitive challenges.
+
+Image: /content/BrainTumor/g_6.jpg
+Tumor Type: Glioma
+Location: Left,right frontal lobe
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such as reasoning, planning, parts of speech, and movement.
+Additional Details: Gliomas tend to grow quickly and can lead to severe symptoms including headaches, seizures, and cognitive difficulties.
+
+Image: /content/BrainTumor/g_7.jpg
+Tumor Type: Glioma
+Location: Left frontal lobe
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such as reasoning, planning, parts of speech, and movement.
+Additional Details: These tumors are aggressive in nature, often causing persistent headaches, seizures, and impairments in cognitive functions.
+
+Image: /content/BrainTumor/g_12.jpg
+Tumor Type: Glioma
+Location: cuneus fibres, lateral fibres 
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such  Involved in transmitting sensory and motor signals, playing a role in coordinating movement and sensory perception..
+Additional Details: Gliomas are notorious for their fast growth, often resulting in symptoms such as headaches, seizures, and cognitive issues.
+
+Image:/content/BrainTumor/g_14.jpg
+Tumor Type: Glioma
+Location: cerebral hemisphere, frontal lobe
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such as reasoning, planning, parts of speech, and movement.
+Additional Details: The aggressive nature of gliomas can lead to persistent headaches, frequent seizures, and various cognitive impairments.
+
+Image: /content/BrainTumor/g_15.jpg
+Tumor Type: Glioma
+Location: parietal lobe, lateral ventricle 
+Affected Parts: The tumor affects the parietal lobe, lateral ventricle,Parietal Lobe: Responsible for processing sensory information such as touch, temperature, and pain, and spatial orientation.
+Lateral Ventricle- Contains cerebrospinal fluid, which cushions and protects the brain, and is involved in maintaining brain homeostasis.
+Additional Details: Gliomas are typically aggressive, with symptoms including severe headaches, frequent seizures, and cognitive difficulties.
+
+
+Image: /content/BrainTumor/g_16.jpg
+Tumor Type: Glioma
+Location: Left frontal lobe
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such as reasoning, planning, parts of speech, and movement.
+Additional Details: Gliomas are known for their aggressive nature and can cause symptoms like headaches, seizures, and cognitive impairments.
+
+Image: /content/BrainTumor/g_17.jpg
+Tumor Type: Glioma
+Location: Parietal Lobe, Cerebral Hemispheres
+Affected Parts:  Responsible for processing sensory information such as touch, temperature, and pain, as well as spatial orientation and coordination,Involved in higher brain functions such as thought, reasoning, memory, and voluntary movement control.
+Additional Details: Gliomas are often aggressive, leading to symptoms such as persistent headaches, seizures, and challenges with cognitive functions.
+
+Image: /content/BrainTumor/g_19.jpg
+Tumor Type: Glioma
+Location: Cerebral Hemispheres
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such as reasoning, planning, parts of speech, and movement.
+Additional Details: Known for their aggressive progression, gliomas can cause chronic headaches, frequent seizures, and notable cognitive impairments.
+
+Image: /content/BrainTumor/g_20.jpg
+Tumor Type: Glioma
+Location: Third Ventricle, Parietal Lobe
+Affected Parts: The tumor affects the Plays a role in the production, circulation, and regulation of cerebrospinal fluid, contributing to the protection and nourishment of the brain,Responsible for processing sensory information such as touch, temperature, and pain, as well as spatial orientation and coordination.
+Additional Details: Gliomas often present with aggressive growth, leading to symptoms such as persistent headaches, seizures, and difficulties with cognitive functions.
+
+Image: /content/BrainTumor/g_21.jpg
+Tumor Type: Glioma
+Location: Occipital Lobe
+Affected Parts: The tumor affects the Occipital Lobe Responsible for visual processing.
+Additional Details: Known for their rapid progression, gliomas can cause severe headaches, frequent seizures, and significant cognitive decline.
+
+Image: /content/BrainTumor/g_22.jpg
+Tumor Type: Glioma
+Location: Left frontal lobe
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such as reasoning, planning, parts of speech, and movement.
+Additional Details: Gliomas are characterized by their aggressive behavior, frequently resulting in symptoms like chronic headaches, seizure activity, and cognitive challenges.
+
+Image: /content/BrainTumor/g_23.jpg
+Tumor Type: Glioma
+Location: Occipital Lobe
+Affected Parts: The tumor affects the Occipital Lobe Responsible for visual processing.
+Additional Details: Gliomas tend to grow quickly and can lead to severe symptoms including headaches, seizures, and cognitive difficulties.
+
+Image: /content/BrainTumor/g_24.jpg
+Tumor Type: Glioma
+Location: Parietal Lobe
+Affected Parts: The tumor affects the left Parietal Lobe, which is responsible for Processes sensory information such as touch, temperature, and pain
+Additional Details: These tumors are aggressive in nature, often causing persistent headaches, seizures, and impairments in cognitive functions.
+
+Image: /content/BrainTumor/g_12.jpg
+Tumor Type: Glioma
+Location: cuneus fibres, lateral fibres 
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such  Involved in transmitting sensory and motor signals, playing a role in coordinating movement and sensory perception..
+Additional Details: Gliomas are notorious for their fast growth, often resulting in symptoms such as headaches, seizures, and cognitive issues.
+
+Image:/content/BrainTumor/g_14.jpg
+Tumor Type: Glioma
+Location: cerebral hemisphere, frontal lobe
+Affected Parts: The tumor affects the left frontal lobe, which is responsible for cognitive functions such as reasoning, planning, parts of speech, and movement.
+Additional Details: The aggressive nature of gliomas can lead to persistent headaches, frequent seizures, and various cognitive impairments.
+
+Image: /content/BrainTumor/g_15.jpg
+Tumor Type: Glioma
+Location: parietal lobe, lateral ventricle 
+Affected Parts: The tumor affects the parietal lobe, lateral ventricle,Parietal Lobe: Responsible for processing sensory information such as touch, temperature, and pain, and spatial orientation.
+Lateral Ventricle- Contains cerebrospinal fluid, which cushions and protects the brain, and is involved in maintaining brain homeostasis.
+Additional Details: Gliomas are typically aggressive, with symptoms including severe headaches, frequent seizures, and cognitive difficulties.
