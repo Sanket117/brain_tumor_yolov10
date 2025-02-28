@@ -4,12 +4,9 @@ import logging
 import matplotlib.pyplot as plt
 from flask import Flask, request, jsonify, send_file, render_template, redirect, flash, url_for
 from flask_cors import CORS
-from langchain_pinecone import Pinecone as LangChainPinecone
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_core.prompts import PromptTemplate
-from langchain.chains import RetrievalQA
+
 import sqlite3
-from pinecone import Pinecone
+
 from ultralytics import YOLOv10
 import uuid
 from dotenv import load_dotenv
@@ -51,35 +48,6 @@ if not PINECONE_API_KEY or not PINECONE_API_ENV:
     logging.error("Pinecone API key or environment not set.")
     raise ValueError("Pinecone API key or environment not set.")
 
-pc = Pinecone(api_key=PINECONE_API_KEY)
-index_name = "medicalchatbot"
-
-if index_name not in pc.list_indexes().names():
-    logging.error(f"Index {index_name} does not exist.")
-    raise ValueError(f"Index {index_name} does not exist.")
-
-index = pc.Index(index_name)
-
-# Initialize embeddings
-embeddings = HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
-
-# Initialize Pinecone vector store
-docsearch = LangChainPinecone(index=index, embedding=embeddings, text_key='text')
-
-# Define the prompt template
-prompt_template = """
-Use the following pieces of medical context to answer the user's question.
-If you don't know the answer, just say that you don't know; don't try to make up an answer.
-
-Context: {context}
-Question: {question}
-
-Provide a concise, professional answer based strictly on the context.
-Answer:
-"""
-
-PROMPT = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
-chain_type_kwargs = {"prompt": PROMPT}
 
 # Initialize the Groq API
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
