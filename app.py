@@ -7,7 +7,7 @@ from flask_cors import CORS
 
 import sqlite3
 
-from ultralytics import YOLOv10
+from ultralytics import YOLO
 import uuid
 from dotenv import load_dotenv
 
@@ -38,7 +38,7 @@ else:
     logging.info(f"Model path {MODEL_PATH} exists.")
 
 # Initialize YOLOv10 model
-model = YOLOv10(MODEL_PATH)
+model = YOLO(MODEL_PATH)
 
 # Initialize Pinecone
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
