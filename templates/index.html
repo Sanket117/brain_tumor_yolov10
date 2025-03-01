@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Brain Tumor Detection and Classification and AI Chatbot</h1>
+            <h1>Brain MRI analysis with AI</h1>
             <button id="add-patient-btn" class="header-button" onclick="window.location.href='/add_patient';">Add Patient</button>
             <button id="logout-btn" class="header-button"  href="/login">Logout</button>
         </header>
@@ -18,7 +18,7 @@
         <div class="main-content">
             <!-- Left Section: Upload Image -->
             <section class="upload-section">
-                <h2>Upload MRI Image</h2>
+                <h2>Upload MRI Image 📷 </h2>
                 <form id="upload-form" enctype="multipart/form-data">
                     <input type="file" id="file" name="file" required>
                     <button type="submit">Upload and Predict</button>
@@ -32,7 +32,7 @@
             
             <!-- Middle Section: Image and Caption -->
             <section class="middle-section">
-                <h2>Prediction Result</h2>
+                <h2>Prediction Result 📑 </h2>
                 <div id="image-container" class="image-container">
                     <!-- Display result image here -->
                     <img id="result-image" class="result-image" src="" alt="">
@@ -42,7 +42,7 @@
             
             <!-- Right Section: Chatbot -->
             <section class="chatbot-section">
-                <h2>AI Assistant</h2>
+                <h2>AI Assistant 🤖 </h2>
                 <div id="chat-container" class="chat-container">
                     <div id="chat-output" class="chat-output"></div>
                     <div class="chat-input-container">
