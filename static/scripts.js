@@ -1,60 +1,100 @@
+// Display welcome message in chatbot on first load with animation
+window.addEventListener('DOMContentLoaded', function () {
+    const chatOutput = document.getElementById('chat-output');
+
+    // Create and append the welcome message
+    const welcomeMessage = document.createElement('p');
+    welcomeMessage.classList.add('bot-message', 'animated-message');
+    chatOutput.appendChild(welcomeMessage);
+
+    // Add typing effect and fade-in animation for the welcome message
+    const welcomeText = "Hello, I'm Jaggu. I'm an AI assistant. How can I help you today? 😄";
+    typeTextWithAnimation(welcomeMessage, welcomeText, 50);
+});
+
 // Function to handle form submission for predicting brain tumor
-document.getElementById('upload-form').addEventListener('submit', async function(event) {
+document.getElementById('upload-form').addEventListener('submit', async function (event) {
     event.preventDefault();
+
+    const fileInput = document.getElementById('file');
+    const loadingIndicator = document.getElementById('loading');
+    const uploadedImage = document.getElementById('uploaded-image');
+    const resultImage = document.getElementById('result-image');
+    const captionElement = document.getElementById('caption');
+
+    if (fileInput.files.length === 0) {
+        captionElement.innerHTML = `<div class="alert alert-warning">Please upload a file before submitting.</div>`;
+        return;
+    }
+
     const formData = new FormData();
-    formData.append('file', document.getElementById('file').files[0]);
+    formData.append('file', fileInput.files[0]);
 
-    document.getElementById('loading').style.display = 'block';  // Show loading indicator
+    loadingIndicator.style.display = 'block'; // Show loading indicator
 
-    const response = await fetch('/predict', {
-        method: 'POST',
-        body: formData
-    });
+    try {
+        const response = await fetch('/predict', {
+            method: 'POST',
+            body: formData,
+        });
 
-    document.getElementById('loading').style.display = 'none';  // Hide loading indicator
+        loadingIndicator.style.display = 'none'; // Hide loading indicator
 
-    if (response.ok) {
-        const imageBlob = await response.blob();
-        const imageObjectURL = URL.createObjectURL(imageBlob);
+        if (response.ok) {
+            const resultData = await response.json();
 
-        // Display the uploaded image
-        document.getElementById('uploaded-image').src = URL.createObjectURL(document.getElementById('file').files[0]);
+            // Display the uploaded image
+            uploadedImage.src = URL.createObjectURL(fileInput.files[0]);
+            uploadedImage.style.display = 'block';
 
-        // Display the result image
-        document.getElementById('result-image').src = imageObjectURL;
+            // Display the result image
+            resultImage.src = resultData.annotated_image;
+            resultImage.style.display = 'block';
 
-        // Optionally, display the caption
-        const resultData = await response.json();
-        document.getElementById('caption').innerHTML = `<div class="alert alert-info">${resultData.caption}</div>`;
-    } else {
-        const error = await response.json();
-        document.getElementById('result').innerHTML = `<div class="alert alert-danger">${error.error}</div>`;
+            // Display the AI-generated analysis
+            captionElement.innerHTML = `
+                <h3>YOLOv10 Summary</h3>
+                <p>${resultData.yolo_summary}</p>
+                <h3>AI Analysis</h3>
+                <p>${resultData.ai_analysis}</p>
+            `;
+        } else {
+            const error = await response.json();
+            captionElement.innerHTML = `<div class="alert alert-danger">${error.error}</div>`;
+        }
+    } catch (error) {
+        loadingIndicator.style.display = 'none';
+        console.error('Error:', error);
+        captionElement.innerHTML = `<div class="alert alert-danger">An error occurred while processing the file.</div>`;
     }
 });
 
 // Function to handle chatbot interactions
-document.getElementById('send-btn').addEventListener('click', async function(event) {
+document.getElementById('send-btn').addEventListener('click', async function (event) {
     event.preventDefault();
-    const message = document.getElementById('chat-input').value.trim();
+
+    const chatInput = document.getElementById('chat-input');
+    const chatOutput = document.getElementById('chat-output');
+    const message = chatInput.value.trim();
 
     if (message === '') return;
 
     // Append user message to chat
     addMessage(message, 'user-message');
-    document.getElementById('chat-input').value = ''; // Clear input field
+    chatInput.value = ''; // Clear input field
 
     const typingIndicator = document.createElement('p');
     typingIndicator.classList.add('typing-indicator');
     typingIndicator.textContent = 'Typing...';
-    document.getElementById('chat-output').appendChild(typingIndicator);
+    chatOutput.appendChild(typingIndicator);
 
     try {
         const response = await fetch('/chatbot', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ message: message })
+            body: JSON.stringify({ message: message }),
         });
 
         typingIndicator.remove();
@@ -73,17 +113,19 @@ document.getElementById('send-btn').addEventListener('click', async function(eve
     }
 });
 
+// Helper function to add a message to the chat
 function addMessage(text, className) {
+    const chatOutput = document.getElementById('chat-output');
     const messageElement = document.createElement('p');
-    messageElement.classList.add(className);
+    messageElement.classList.add(className, 'animated-message'); // Add animation class
     messageElement.textContent = '';
-    document.getElementById('chat-output').appendChild(messageElement);
-    typeText(messageElement, text);
+    chatOutput.appendChild(messageElement);
+    typeTextWithAnimation(messageElement, text, 50);
 }
 
-function typeText(element, text) {
+// Helper function to type out text dynamically with animation
+function typeTextWithAnimation(element, text, typingSpeed = 50) {
     let i = 0;
-    const typingSpeed = 50; // Adjust typing speed
     function type() {
         if (i < text.length) {
             element.textContent += text.charAt(i);
