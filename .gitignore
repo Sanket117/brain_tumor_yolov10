@@ -1,0 +1,8 @@
+venv
+model\llama-2-7b-chat.ggmlv3.q4_0.bin
+D:\brain_tumor_yolov10\model\llama-2-7b-chat.ggmlv3.q4_0.bin
+main.py
+.env
+.gitigonre
+tumor_descriptions.txt
+latest.py

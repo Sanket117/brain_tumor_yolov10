@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Diagnosis</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Brain MRI analysis with AI</h1>
+            <button id="add-patient-btn" class="header-button" onclick="window.location.href='/add_patient';">Add Patient</button>
+            <button id="logout-btn" class="header-button"  href="/login">Logout</button>
+        </header>
+        
+        <div class="main-content">
+            <!-- Left Section: Upload Image -->
+            <section class="upload-section">
+                <h2>Upload MRI Image 📷 </h2>
+                <form id="upload-form" enctype="multipart/form-data">
+                    <input type="file" id="file" name="file" required>
+                    <button type="submit">Upload and Predict</button>
+                    <div id="loading" class="loading">Processing...</div>
+                </form>
+                <div id="uploaded-image-container" class="uploaded-image-container">
+                    <!-- Display uploaded image here -->
+                    <img id="uploaded-image" class="uploaded-image" src="" alt="">
+                </div>
+            </section>
+            
+            <!-- Middle Section: Image and Caption -->
+            <section class="middle-section">
+                <h2>Prediction Result 📑 </h2>
+                <div id="image-container" class="image-container">
+                    <!-- Display result image here -->
+                    <img id="result-image" class="result-image" src="" alt="">
+                </div>
+                <div id="caption" class="caption"></div>
+            </section>
+            
+            <!-- Right Section: Chatbot -->
+            <section class="chatbot-section">
+                <h2>AI Assistant 🤖 </h2>
+                <div id="chat-container" class="chat-container">
+                    <div id="chat-output" class="chat-output"></div>
+                    <div class="chat-input-container">
+                        <input type="text" id="chat-input" class="chat-input" placeholder="Ask me anything about brain tumors...">
+                        <button id="send-btn" class="send-btn">Send</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>

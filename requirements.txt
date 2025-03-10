@@ -1,0 +1,30 @@
+# Core Flask dependencies
+Flask==3.0.3
+flask-cors==4.0.0
+
+# Groq API client
+groq==0.9.0  # Assuming latest version as of Feb 2025
+
+# Environment variable management
+python-dotenv==1.0.1
+
+# Logging is built-in, no additional package needed
+
+# Plotting library for image handling
+matplotlib==3.8.3
+
+# Pinecone and LangChain dependencies for vector store and embeddings
+pinecone-client==3.2.2  # For Pinecone class
+langchain-pinecone==0.1.0  # For LangChainPinecone
+langchain-core==0.2.0  # For PromptTemplate and RetrievalQA
+langchain==0.2.0  # General LangChain dependency
+huggingface_hub==0.23.0  # For HuggingFaceEmbeddings dependency
+sentence-transformers==2.6.1  # For all-MiniLM-L6-v2 model
+
+# SQLite is built-in, no additional package needed
+
+# YOLOv10 for image prediction
+ultralytics==8.2.0  # Assuming YOLOv10 is part of ultralytics
+
+# OpenAI SDK for GPT-4o-mini
+openai==1.12.0  # Latest as of Feb 2025
